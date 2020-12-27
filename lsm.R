@@ -1,6 +1,6 @@
 #lsm関数
 lsm <- function(d) {
-  if (ncol(d)!=2) stop("単純線形回帰だけ！")
+  if (ncol(d)!=2) stop("単回帰だけ！")
   n <- nrow(d)
   x_mean <- mean(d[,1])
   y_mean <- mean(d[,2])
